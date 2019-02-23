@@ -3,12 +3,12 @@
 
 int main(void)
 {
-	//Screen dimension
+	//Screen dimensions
 	constexpr int SCREEN_WIDTH = 800;
 	constexpr int SCREEN_HEIGHT = 600; 
 
 	sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "SFML works!");
-	sf::CircleShape shape(100.f);
+	sf::CircleShape shape(120.f);
 	shape.setFillColor(sf::Color::Green);
 
 	while (window.isOpen())
