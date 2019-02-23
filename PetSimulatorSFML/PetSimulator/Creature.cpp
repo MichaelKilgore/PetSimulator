@@ -18,6 +18,16 @@ Creature::Creature(int health, int energy, int hunger, int thirst, sf::Sprite ne
 	this->thirst = thirst;
 
 	this->creature = newCreature;
+
+	this->creature.setTextureRect({ 0, 0, 64, 64 });
+
+	animations_[int(Animation::AnimationIndex::WALKING_UP)]    = Animation(64, 525, 64, 64, "Assets/Creature 1.png", -1);
+	animations_[int(Animation::AnimationIndex::WALKING_DOWN)]  = Animation(64, 650, 64, 64, "Assets/Creature 1.png", -1);
+	animations_[int(Animation::AnimationIndex::WALKING_LEFT)]  = Animation(64, 590, 64, 64, "Assets/Creature 1.png", -1);
+	animations_[int(Animation::AnimationIndex::WALKING_RIGHT)] = Animation(64, 720, 64, 64, "Assets/Creature 1.png", -1);
+	
+	animations_[int(currentAnimation)].ApplyToSprite(this->creature);
+
 }
 
 int Creature::getHealth()
@@ -65,4 +75,10 @@ void Creature::setCreature(sf::Sprite newCreature)
 void Creature::Render(sf::RenderTarget & target)
 {
 	target.draw(this->getCreature());
+}
+
+void Creature::Update(float dT)
+{
+	animations_[int(currentAnimation)].Update(dT, 0);
+	animations_[int(currentAnimation)].ApplyToSprite(creature);
 }

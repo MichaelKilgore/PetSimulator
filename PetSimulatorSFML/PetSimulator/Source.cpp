@@ -1,10 +1,8 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Creature.h"
-<<<<<<< HEAD
-=======
+
 #include "Animation.h"
->>>>>>> 5b77a0b87f1696cb0c574c96467e20f78dd6e02d
 
 int main(void)
 {
@@ -24,6 +22,7 @@ int main(void)
 	Creature *creature = new Creature(100, 100, 100, 100, creatureSprite);
 	
 	
+	
 
 	// Run windowasdf
 	while (window.isOpen())
@@ -34,6 +33,8 @@ int main(void)
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
+
+		creature->Update(.001);
 
 		window.clear();
 		window.draw(shape);

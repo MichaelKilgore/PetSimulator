@@ -1,9 +1,10 @@
 #include "Animation.h"
 
-Animation::Animation(){}
-
 Animation::Animation(int posX, int posY, int imgWidth, int imgHeight, std::string fileName, int frameAdjust)
 {
+	iFrame_ = 0;
+	time_ = 0.0f;
+	
 	texture_.loadFromFile(fileName);
 
 	for (int i = 0; i < numFrames_ - frameAdjust; ++i)

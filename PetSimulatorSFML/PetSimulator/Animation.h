@@ -16,7 +16,7 @@ public:
 	};
 
 public:
-	Animation();
+	Animation() = default;
 	Animation(int posX, int posY, int imgWidth, int imgHeight, std::string fileName, int frameAdjust);
 
 	void ApplyToSprite(sf::Sprite &sprite) const;
@@ -27,7 +27,7 @@ private:
 	void Advance(int frameAdjust);
 
 private:
-	static constexpr int numFrames_ = 3;
+	static constexpr int numFrames_ = 8;
 	static constexpr float holdTime_ = 0.1f;
 	sf::Texture texture_;
 	sf::IntRect frames_[numFrames_];

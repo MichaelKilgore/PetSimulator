@@ -21,6 +21,7 @@ public:
 	void setCreature(sf::Sprite newCreature);
 
 	void Render(sf::RenderTarget & target);
+	void Update(float dT);
 
 private:
 	int health;
@@ -30,5 +31,6 @@ private:
 
 	sf::Sprite creature;
 	Animation animations_[int(Animation::AnimationIndex::COUNT)];
-	Animation::AnimationIndex currentAnimation;
+	Animation::AnimationIndex currentAnimation = Animation::AnimationIndex::WALKING_DOWN;
+
 };
