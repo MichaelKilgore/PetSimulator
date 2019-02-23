@@ -1,7 +1,4 @@
 ﻿  Source.cpp
-c:\users\michael\source\repos\ahanson29\petsimulator\petsimulatorsfml\petsimulator\source.cpp(35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Animation.cpp
-  Generating Code...
-  LINK : C:\Users\Michael\Source\Repos\ahanson29\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.exe not found or not built by the last incremental link; performing full link
-  PetSimulator.vcxproj -> C:\Users\Michael\Source\Repos\ahanson29\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.exe
-  PetSimulator.vcxproj -> C:\Users\Michael\Source\Repos\ahanson29\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.pdb (Partial PDB)
+c:\users\hp\source\repos\ahanson29\petsimulator\petsimulator\petsimulatorsfml\petsimulator\source.cpp(38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  PetSimulator.vcxproj -> C:\Users\HP\source\repos\ahanson29\PetSimulator\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.exe
+  PetSimulator.vcxproj -> C:\Users\HP\source\repos\ahanson29\PetSimulator\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.pdb (Partial PDB)

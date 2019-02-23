@@ -11,8 +11,11 @@ int main(void)
 
 	sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "SFML works!");
 	sf::Texture texture;
+	
 	texture.loadFromFile("Assets/grass block.jpg");
+	
 	sf::Sprite sprite(texture);
+	
 	sprite.setTextureRect({ 20, 20, 100, 100 });
 	// Run window
 	while (window.isOpen())
@@ -37,6 +40,7 @@ int main(void)
 			}
 		}
 		sprite.setPosition(0, 0);
+		
 		window.display();
 		////////////////////////////////////
 	}
