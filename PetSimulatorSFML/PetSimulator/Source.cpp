@@ -1,30 +1,35 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+<<<<<<< HEAD
 #include "Creature.h"
 
 #include "Animation.h"
+=======
+#include "Animation.h"
+#include "Creature.h"
+>>>>>>> 272d4f0e065b1af17c2a57b8e9ed20e1dc34f455
 
 int main(void)
 {
 	//Screen dimensions
 	constexpr int SCREEN_WIDTH = 800;
-	constexpr int SCREEN_HEIGHT = 600; 
+	constexpr int SCREEN_HEIGHT = 600;
 
 	sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "SFML works!");
-	sf::CircleShape shape(120.f);
-	shape.setFillColor(sf::Color::Green);
-
-	sf::Texture creatureTexture;
-	creatureTexture.loadFromFile("Assets/Creature 1.png");
-	sf::Sprite creatureSprite;
-	creatureSprite.setTexture(creatureTexture);
-
-	Creature *creature = new Creature(100, 100, 100, 100, creatureSprite);
+	sf::Texture texture;
 	
+	texture.loadFromFile("Assets/grass block.jpg");
 	
+<<<<<<< HEAD
 	
 
 	// Run windowasdf
+=======
+	sf::Sprite sprite(texture);
+	
+	sprite.setTextureRect({ 20, 20, 100, 100 });
+	// Run window
+>>>>>>> 272d4f0e065b1af17c2a57b8e9ed20e1dc34f455
 	while (window.isOpen())
 	{
 		sf::Event event;
@@ -37,9 +42,21 @@ int main(void)
 		creature->Update(.001);
 
 		window.clear();
-		window.draw(shape);
-		creature->Render(window);
+
+		// SETTING THE BACKGROUND////////////
+		//window.draw(background.getSprite());
+		for (int i = 0; i < 8; i++)
+		{
+			for (int j = 0; j < 6; j++)
+			{
+				sprite.setPosition(i * 100, j * 100);
+				window.draw(sprite);
+			}
+		}
+		sprite.setPosition(0, 0);
+		
 		window.display();
+		////////////////////////////////////
 	}
 
 }

@@ -1,4 +1,10 @@
 ﻿  Source.cpp
+<<<<<<< HEAD
 d:\hackathon\petsimulator\petsimulatorsfml\petsimulator\source.cpp(37): warning C4305: 'argument': truncation from 'double' to 'float'
   PetSimulator.vcxproj -> D:\Hackathon\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.exe
   PetSimulator.vcxproj -> D:\Hackathon\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.pdb (Partial PDB)
+=======
+c:\users\hp\source\repos\ahanson29\petsimulator\petsimulator\petsimulatorsfml\petsimulator\source.cpp(38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  PetSimulator.vcxproj -> C:\Users\HP\source\repos\ahanson29\PetSimulator\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.exe
+  PetSimulator.vcxproj -> C:\Users\HP\source\repos\ahanson29\PetSimulator\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.pdb (Partial PDB)
+>>>>>>> 272d4f0e065b1af17c2a57b8e9ed20e1dc34f455
