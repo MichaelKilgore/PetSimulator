@@ -8,6 +8,7 @@ Creature::Creature()
 	this->thirst;
 
 	this->creature;
+	this->currentAnimation = Animation::AnimationIndex::WALKING_DOWN;
 }
 Creature::Creature(int health, int energy, int hunger, int thirst, sf::Sprite newCreature)
 {
@@ -59,4 +60,9 @@ void Creature::setThirst(int thirst)
 void Creature::setCreature(sf::Sprite newCreature)
 {
 	this->creature = newCreature;
+}
+
+void Creature::Render(sf::RenderTarget & target)
+{
+	target.draw(this->getCreature());
 }
