@@ -11,6 +11,7 @@ int main(void)
 	sf::CircleShape shape(120.f);
 	shape.setFillColor(sf::Color::Green);
 
+	// Run window
 	while (window.isOpen())
 	{
 		sf::Event event;
