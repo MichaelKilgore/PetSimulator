@@ -6,6 +6,16 @@
 class Animation
 {
 public:
+	enum class AnimationIndex
+	{
+		WALKING_UP,
+		WALKING_DOWN,
+		WALKING_LEFT,
+		WALKING_RIGHT,
+		COUNT
+	};
+
+public:
 	Animation();
 	Animation(int posX, int posY, int imgWidth, int imgHeight, std::string fileName, int frameAdjust);
 

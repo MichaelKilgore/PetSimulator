@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "Creature.h"
 
 int main(void)
 {
@@ -10,6 +11,15 @@ int main(void)
 	sf::RenderWindow window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT), "SFML works!");
 	sf::CircleShape shape(120.f);
 	shape.setFillColor(sf::Color::Green);
+
+	sf::Texture creatureTexture;
+	creatureTexture.loadFromFile("Assets/Creature 1.png");
+	sf::Sprite creatureSprite;
+	creatureSprite.setTexture(creatureTexture);
+
+	Creature *creature = new Creature(100, 100, 100, 100, creatureSprite);
+	
+	
 
 	// Run windowasdf
 	while (window.isOpen())
@@ -23,6 +33,7 @@ int main(void)
 
 		window.clear();
 		window.draw(shape);
+		creature->Render(window);
 		window.display();
 	}
 

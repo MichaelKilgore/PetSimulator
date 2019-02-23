@@ -27,7 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Assets\Creature 1" />
+    <None Include="Assets\Creature 1.png" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\grass block.jpg">
