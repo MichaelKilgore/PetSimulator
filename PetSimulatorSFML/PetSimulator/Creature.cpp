@@ -29,15 +29,15 @@ int Creature::getEnergy()
 }
 int Creature::getHunger()
 {
-	this->hunger;
+	return this->hunger;
 }
 int Creature::getThirst()
 {
-	this->thirst;
+	return this->thirst;
 }
 sf::Sprite & Creature::getCreature()
 {
-	this->creature;
+	return this->creature;
 }
 
 void Creature::setHealth(int hp)

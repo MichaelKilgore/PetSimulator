@@ -1,5 +1,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "Creature.h"
+#include "Animation.h"
 
 int main(void)
 {
