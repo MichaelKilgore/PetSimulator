@@ -1,6 +1,10 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Creature.h"
+<<<<<<< HEAD
+=======
+#include "Animation.h"
+>>>>>>> 5b77a0b87f1696cb0c574c96467e20f78dd6e02d
 
 int main(void)
 {

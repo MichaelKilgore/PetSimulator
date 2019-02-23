@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿  Source.cpp
   Creature.cpp
   Generating Code...
   PetSimulator.vcxproj -> D:\Hackathon\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.exe
   PetSimulator.vcxproj -> D:\Hackathon\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.pdb (Partial PDB)
+=======
+﻿  PetSimulator.vcxproj -> C:\Users\HP\source\repos\ahanson29\PetSimulator\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.exe
+  PetSimulator.vcxproj -> C:\Users\HP\source\repos\ahanson29\PetSimulator\PetSimulator\PetSimulatorSFML\Debug\PetSimulator.pdb (Partial PDB)
+>>>>>>> 5b77a0b87f1696cb0c574c96467e20f78dd6e02d
