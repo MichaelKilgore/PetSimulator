@@ -11,11 +11,14 @@ public:
 	int getEnergy();
 	int getHunger();
 	int getThirst();
+	sf::Sprite & getCreature();
 
 	void setHealth(int hp);
 	void setEnergy(int energy);
-	void getHunger(int hunger);
-	void getThirst(int thirst);
+	void setHunger(int hunger);
+	void setThirst(int thirst);
+	void setCreature(sf::Sprite newCreature);
+
 
 private:
 	int health;
