@@ -1,6 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "Animation.h"
+
 int main(void)
 {
 	//Screen dimensions
